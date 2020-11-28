@@ -1,0 +1,173 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/travis/Kitura-Next/BlueRSA/Sources/CryptorRSA/CryptorRSADigest.swift",
+      "line": 172,
+      "symbol": "Data.Algorithm.algorithmForSignature",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/Kitura-Next/BlueRSA/Sources/CryptorRSA/CryptorRSADigest.swift",
+      "line": 222,
+      "symbol": "Data.Algorithm.alogrithmForEncryption",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/Kitura-Next/BlueRSA/Sources/CryptorRSA/CryptorRSADigest.swift",
+      "line": 280,
+      "symbol": "Data.Algorithm.engine",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/Kitura-Next/BlueRSA/Sources/CryptorRSA/CryptorRSAErrors.swift",
+      "line": 35,
+      "symbol": "CryptorRSA.ERR_DOMAIN",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/Kitura-Next/BlueRSA/Sources/CryptorRSA/CryptorRSAErrors.swift",
+      "line": 37,
+      "symbol": "CryptorRSA.ERR_ADD_KEY",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/Kitura-Next/BlueRSA/Sources/CryptorRSA/CryptorRSAErrors.swift",
+      "line": 38,
+      "symbol": "CryptorRSA.ERR_DELETE_KEY",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/Kitura-Next/BlueRSA/Sources/CryptorRSA/CryptorRSAErrors.swift",
+      "line": 39,
+      "symbol": "CryptorRSA.ERR_STRIP_PK_HEADER",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/Kitura-Next/BlueRSA/Sources/CryptorRSA/CryptorRSAErrors.swift",
+      "line": 40,
+      "symbol": "CryptorRSA.ERR_INIT_PK",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/Kitura-Next/BlueRSA/Sources/CryptorRSA/CryptorRSAErrors.swift",
+      "line": 41,
+      "symbol": "CryptorRSA.ERR_BASE64_PEM_DATA",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/Kitura-Next/BlueRSA/Sources/CryptorRSA/CryptorRSAErrors.swift",
+      "line": 42,
+      "symbol": "CryptorRSA.ERR_STRING_ENCODING",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/Kitura-Next/BlueRSA/Sources/CryptorRSA/CryptorRSAErrors.swift",
+      "line": 43,
+      "symbol": "CryptorRSA.ERR_KEY_NOT_PUBLIC",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/Kitura-Next/BlueRSA/Sources/CryptorRSA/CryptorRSAErrors.swift",
+      "line": 44,
+      "symbol": "CryptorRSA.ERR_KEY_NOT_PRIVATE",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/Kitura-Next/BlueRSA/Sources/CryptorRSA/CryptorRSAErrors.swift",
+      "line": 45,
+      "symbol": "CryptorRSA.ERR_NOT_ENCRYPTED",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/Kitura-Next/BlueRSA/Sources/CryptorRSA/CryptorRSAErrors.swift",
+      "line": 46,
+      "symbol": "CryptorRSA.ERR_ENCRYPTION_FAILED",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/Kitura-Next/BlueRSA/Sources/CryptorRSA/CryptorRSAErrors.swift",
+      "line": 47,
+      "symbol": "CryptorRSA.ERR_NOT_SIGNED_DATA",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/Kitura-Next/BlueRSA/Sources/CryptorRSA/CryptorRSAErrors.swift",
+      "line": 48,
+      "symbol": "CryptorRSA.ERR_NOT_PLAINTEXT",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/Kitura-Next/BlueRSA/Sources/CryptorRSA/CryptorRSAErrors.swift",
+      "line": 49,
+      "symbol": "CryptorRSA.ERR_DECRYPTION_FAILED",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/Kitura-Next/BlueRSA/Sources/CryptorRSA/CryptorRSAErrors.swift",
+      "line": 50,
+      "symbol": "CryptorRSA.ERR_SIGNING_FAILED",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/Kitura-Next/BlueRSA/Sources/CryptorRSA/CryptorRSAErrors.swift",
+      "line": 51,
+      "symbol": "CryptorRSA.ERR_VERIFICATION_FAILED",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/Kitura-Next/BlueRSA/Sources/CryptorRSA/CryptorRSAErrors.swift",
+      "line": 52,
+      "symbol": "CryptorRSA.ERR_CREATE_CERT_FAILED",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/Kitura-Next/BlueRSA/Sources/CryptorRSA/CryptorRSAErrors.swift",
+      "line": 53,
+      "symbol": "CryptorRSA.ERR_EXTRACT_PUBLIC_KEY_FAILED",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/Kitura-Next/BlueRSA/Sources/CryptorRSA/CryptorRSAErrors.swift",
+      "line": 54,
+      "symbol": "CryptorRSA.ERR_EXTRACT_PRIVATE_KEY_FAILED",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/Kitura-Next/BlueRSA/Sources/CryptorRSA/CryptorRSAErrors.swift",
+      "line": 55,
+      "symbol": "CryptorRSA.ERR_NOT_IMPLEMENTED",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/Kitura-Next/BlueRSA/Sources/CryptorRSA/CryptorRSAKey.swift",
+      "line": 43,
+      "symbol": "CryptorRSA.NativeKey",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/travis/Kitura-Next/BlueRSA"
+}
