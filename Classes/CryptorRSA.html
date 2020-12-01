@@ -1,0 +1,2998 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CryptorRSA Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Class/CryptorRSA" class="dashAnchor"></a>
+
+    <a title="CryptorRSA Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          CryptorRSA 1.0.34 Docs
+        </a>
+         (80% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">CryptorRSA Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      CryptorRSA Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CryptorRSA.html">CryptorRSA</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CryptorRSA/RSAData.html">– RSAData</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CryptorRSA.html#/s:10CryptorRSAAAC13PlaintextDataC">– PlaintextData</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CryptorRSA/EncryptedData.html">– EncryptedData</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CryptorRSA/SignedData.html">– SignedData</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CryptorRSA/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CryptorRSA/RSAKey.html">– RSAKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CryptorRSA/PublicKey.html">– PublicKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CryptorRSA/PrivateKey.html">– PrivateKey</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/CFString.html">CFString</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Data.html">Data</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Data/Algorithm.html">– Algorithm</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/CC_LONG">CC_LONG</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>CryptorRSA</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@available(macOS 10.12, iOS 10.3, watchOS 3.3, tvOS 12.0, *)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">CryptorRSA</span></code></pre>
+
+                </div>
+              </div>
+            <p>RSA Encryption/Decryption, Signing/Verification</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Class%20Functions"></a>
+                <a name="//apple_ref/swift/Section/Class Functions" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Class%20Functions"></a>
+                  <h3 class="section-name"><p>Class Functions</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC15createPlaintext4withAB0D4DataC10Foundation0F0V_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/createPlaintext(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC15createPlaintext4withAB0D4DataC10Foundation0F0V_tFZ">createPlaintext(with:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a plaintext data container.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">createPlaintext</span><span class="p">(</span><span class="n">with</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/CryptorRSA.html#/s:10CryptorRSAAAC13PlaintextDataC">PlaintextData</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>Data</code> containing the key data.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Newly initialized <code><a href="../Classes/CryptorRSA.html#/s:10CryptorRSAAAC13PlaintextDataC">PlaintextData</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC15createPlaintext4with5usingAB0D4DataCSS_SS10FoundationE8EncodingVtKFZ"></a>
+                    <a name="//apple_ref/swift/Method/createPlaintext(with:using:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC15createPlaintext4with5usingAB0D4DataCSS_SS10FoundationE8EncodingVtKFZ">createPlaintext(with:<wbr>using:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a message from a plaintext string, with the specified encoding.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">createPlaintext</span><span class="p">(</span><span class="n">with</span> <span class="nv">string</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">using</span> <span class="nv">encoding</span><span class="p">:</span> <span class="kt">String</span><span class="o">.</span><span class="kt">Encoding</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/CryptorRSA.html#/s:10CryptorRSAAAC13PlaintextDataC">PlaintextData</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>string</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>String value of the plaintext message</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>encoding</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Encoding to use to generate the clear data</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Newly initialized <code><a href="../Classes/CryptorRSA.html#/s:10CryptorRSAAAC13PlaintextDataC">PlaintextData</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC15createEncrypted4withAB0D4DataC10Foundation0F0V_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/createEncrypted(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC15createEncrypted4withAB0D4DataC10Foundation0F0V_tFZ">createEncrypted(with:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create an encrypted data container.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">createEncrypted</span><span class="p">(</span><span class="n">with</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/CryptorRSA/EncryptedData.html">EncryptedData</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>Data</code> containing the encrypted data.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Newly initialized <code><a href="../Classes/CryptorRSA/EncryptedData.html">EncryptedData</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC15createEncrypted4withAB0D4DataCSS_tKFZ"></a>
+                    <a name="//apple_ref/swift/Method/createEncrypted(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC15createEncrypted4withAB0D4DataCSS_tKFZ">createEncrypted(with:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a message with a encrypted base64-encoded string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">createEncrypted</span><span class="p">(</span><span class="n">with</span> <span class="nv">base64String</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/CryptorRSA/EncryptedData.html">EncryptedData</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>base64String</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Base64-encoded data of an encrypted message</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Newly initialized <code><a href="../Classes/CryptorRSA/EncryptedData.html">EncryptedData</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC12createSigned4withAB0D4DataC10Foundation0F0V_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/createSigned(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC12createSigned4withAB0D4DataC10Foundation0F0V_tFZ">createSigned(with:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create an signed data container.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">createSigned</span><span class="p">(</span><span class="n">with</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/CryptorRSA/SignedData.html">SignedData</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>Data</code> containing the signed data.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Newly initialized <code><a href="../Classes/CryptorRSA/SignedData.html">SignedData</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC7RSADataC"></a>
+                    <a name="//apple_ref/swift/Class/RSAData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC7RSADataC">RSAData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>RSA Data Object: Allows for RSA Encryption/Decryption, Signing/Verification and various utility functions.</p>
+
+                        <a href="../Classes/CryptorRSA/RSAData.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">RSAData</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC13PlaintextDataC"></a>
+                    <a name="//apple_ref/swift/Class/PlaintextData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC13PlaintextDataC">PlaintextData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Plaintext Data - Represents data not encrypted or signed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">PlaintextData</span> <span class="p">:</span> <span class="kt"><a href="../Classes/CryptorRSA/RSAData.html">RSAData</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC13EncryptedDataC"></a>
+                    <a name="//apple_ref/swift/Class/EncryptedData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC13EncryptedDataC">EncryptedData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Encrypted Data - Represents data encrypted.</p>
+
+                        <a href="../Classes/CryptorRSA/EncryptedData.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">EncryptedData</span> <span class="p">:</span> <span class="kt"><a href="../Classes/CryptorRSA/RSAData.html">RSAData</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC10SignedDataC"></a>
+                    <a name="//apple_ref/swift/Class/SignedData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC10SignedDataC">SignedData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Signed Data - Represents data that is signed.</p>
+
+                        <a href="../Classes/CryptorRSA/SignedData.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">SignedData</span> <span class="p">:</span> <span class="kt"><a href="../Classes/CryptorRSA/RSAData.html">RSAData</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Certificate%20Suffixes"></a>
+                <a name="//apple_ref/swift/Section/Certificate Suffixes" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Certificate%20Suffixes"></a>
+                  <h3 class="section-name"><p>Certificate Suffixes</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC10CER_SUFFIXSSvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/CER_SUFFIX" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC10CER_SUFFIXSSvpZ">CER_SUFFIX</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>X509 Certificate Extension</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">CER_SUFFIX</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC10PEM_SUFFIXSSvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/PEM_SUFFIX" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC10PEM_SUFFIXSSvpZ">PEM_SUFFIX</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>PEM Suffix</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">PEM_SUFFIX</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC10DER_SUFFIXSSvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/DER_SUFFIX" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC10DER_SUFFIXSSvpZ">DER_SUFFIX</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>DER Suffix</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">DER_SUFFIX</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/PEM%20Certificate%20Markers"></a>
+                <a name="//apple_ref/swift/Section/PEM Certificate Markers" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/PEM%20Certificate%20Markers"></a>
+                  <h3 class="section-name"><p>PEM Certificate Markers</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC16PEM_BEGIN_MARKERSSvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/PEM_BEGIN_MARKER" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC16PEM_BEGIN_MARKERSSvpZ">PEM_BEGIN_MARKER</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>PEM Begin Marker</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">PEM_BEGIN_MARKER</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC14PEM_END_MARKERSSvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/PEM_END_MARKER" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC14PEM_END_MARKERSSvpZ">PEM_END_MARKER</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>PEM End Marker</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">PEM_END_MARKER</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Key%20Markers"></a>
+                <a name="//apple_ref/swift/Section/Public Key Markers" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Public%20Key%20Markers"></a>
+                  <h3 class="section-name"><p>Public Key Markers</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC15PK_BEGIN_MARKERSSvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/PK_BEGIN_MARKER" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC15PK_BEGIN_MARKERSSvpZ">PK_BEGIN_MARKER</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>PK Begin Marker</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">PK_BEGIN_MARKER</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC13PK_END_MARKERSSvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/PK_END_MARKER" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC13PK_END_MARKERSSvpZ">PK_END_MARKER</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>PK End Marker</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">PK_END_MARKER</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Private%20Key%20Markers"></a>
+                <a name="//apple_ref/swift/Section/Private Key Markers" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Private%20Key%20Markers"></a>
+                  <h3 class="section-name"><p>Private Key Markers</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC15SK_BEGIN_MARKERSSvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/SK_BEGIN_MARKER" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC15SK_BEGIN_MARKERSSvpZ">SK_BEGIN_MARKER</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SK Begin Marker</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">SK_BEGIN_MARKER</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC13SK_END_MARKERSSvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/SK_END_MARKER" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC13SK_END_MARKERSSvpZ">SK_END_MARKER</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SK End Marker</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">SK_END_MARKER</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Generic%20Key%20Markers"></a>
+                <a name="//apple_ref/swift/Section/Generic Key Markers" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Generic%20Key%20Markers"></a>
+                  <h3 class="section-name"><p>Generic Key Markers</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC20GENERIC_BEGIN_MARKERSSvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/GENERIC_BEGIN_MARKER" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC20GENERIC_BEGIN_MARKERSSvpZ">GENERIC_BEGIN_MARKER</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Generic Begin Marker</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">GENERIC_BEGIN_MARKER</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC18GENERIC_END_MARKERSSvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/GENERIC_END_MARKER" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC18GENERIC_END_MARKERSSvpZ">GENERIC_END_MARKER</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Generic End Marker</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">GENERIC_END_MARKER</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/--%20Errors%3A%20Domain%20and%20Codes"></a>
+                <a name="//apple_ref/swift/Section/-- Errors: Domain and Codes" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/--%20Errors%3A%20Domain%20and%20Codes"></a>
+                  <h3 class="section-name"><p>&ndash; Errors: Domain and Codes</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC10ERR_DOMAINSSvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/ERR_DOMAIN" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC10ERR_DOMAINSSvpZ">ERR_DOMAIN</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ERR_DOMAIN</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC11ERR_ADD_KEYSivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/ERR_ADD_KEY" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC11ERR_ADD_KEYSivpZ">ERR_ADD_KEY</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ERR_ADD_KEY</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC14ERR_DELETE_KEYSivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/ERR_DELETE_KEY" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC14ERR_DELETE_KEYSivpZ">ERR_DELETE_KEY</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ERR_DELETE_KEY</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC19ERR_STRIP_PK_HEADERSivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/ERR_STRIP_PK_HEADER" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC19ERR_STRIP_PK_HEADERSivpZ">ERR_STRIP_PK_HEADER</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ERR_STRIP_PK_HEADER</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC11ERR_INIT_PKSivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/ERR_INIT_PK" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC11ERR_INIT_PKSivpZ">ERR_INIT_PK</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ERR_INIT_PK</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC19ERR_BASE64_PEM_DATASivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/ERR_BASE64_PEM_DATA" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC19ERR_BASE64_PEM_DATASivpZ">ERR_BASE64_PEM_DATA</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ERR_BASE64_PEM_DATA</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC19ERR_STRING_ENCODINGSivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/ERR_STRING_ENCODING" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC19ERR_STRING_ENCODINGSivpZ">ERR_STRING_ENCODING</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ERR_STRING_ENCODING</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC18ERR_KEY_NOT_PUBLICSivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/ERR_KEY_NOT_PUBLIC" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC18ERR_KEY_NOT_PUBLICSivpZ">ERR_KEY_NOT_PUBLIC</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ERR_KEY_NOT_PUBLIC</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC19ERR_KEY_NOT_PRIVATESivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/ERR_KEY_NOT_PRIVATE" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC19ERR_KEY_NOT_PRIVATESivpZ">ERR_KEY_NOT_PRIVATE</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ERR_KEY_NOT_PRIVATE</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC17ERR_NOT_ENCRYPTEDSivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/ERR_NOT_ENCRYPTED" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC17ERR_NOT_ENCRYPTEDSivpZ">ERR_NOT_ENCRYPTED</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ERR_NOT_ENCRYPTED</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC21ERR_ENCRYPTION_FAILEDSivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/ERR_ENCRYPTION_FAILED" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC21ERR_ENCRYPTION_FAILEDSivpZ">ERR_ENCRYPTION_FAILED</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ERR_ENCRYPTION_FAILED</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC19ERR_NOT_SIGNED_DATASivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/ERR_NOT_SIGNED_DATA" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC19ERR_NOT_SIGNED_DATASivpZ">ERR_NOT_SIGNED_DATA</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ERR_NOT_SIGNED_DATA</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC17ERR_NOT_PLAINTEXTSivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/ERR_NOT_PLAINTEXT" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC17ERR_NOT_PLAINTEXTSivpZ">ERR_NOT_PLAINTEXT</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ERR_NOT_PLAINTEXT</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC21ERR_DECRYPTION_FAILEDSivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/ERR_DECRYPTION_FAILED" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC21ERR_DECRYPTION_FAILEDSivpZ">ERR_DECRYPTION_FAILED</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ERR_DECRYPTION_FAILED</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC18ERR_SIGNING_FAILEDSivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/ERR_SIGNING_FAILED" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC18ERR_SIGNING_FAILEDSivpZ">ERR_SIGNING_FAILED</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ERR_SIGNING_FAILED</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC23ERR_VERIFICATION_FAILEDSivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/ERR_VERIFICATION_FAILED" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC23ERR_VERIFICATION_FAILEDSivpZ">ERR_VERIFICATION_FAILED</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ERR_VERIFICATION_FAILED</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC22ERR_CREATE_CERT_FAILEDSivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/ERR_CREATE_CERT_FAILED" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC22ERR_CREATE_CERT_FAILEDSivpZ">ERR_CREATE_CERT_FAILED</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ERR_CREATE_CERT_FAILED</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC29ERR_EXTRACT_PUBLIC_KEY_FAILEDSivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/ERR_EXTRACT_PUBLIC_KEY_FAILED" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC29ERR_EXTRACT_PUBLIC_KEY_FAILEDSivpZ">ERR_EXTRACT_PUBLIC_KEY_FAILED</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ERR_EXTRACT_PUBLIC_KEY_FAILED</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC30ERR_EXTRACT_PRIVATE_KEY_FAILEDSivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/ERR_EXTRACT_PRIVATE_KEY_FAILED" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC30ERR_EXTRACT_PRIVATE_KEY_FAILEDSivpZ">ERR_EXTRACT_PRIVATE_KEY_FAILED</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ERR_EXTRACT_PRIVATE_KEY_FAILED</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC19ERR_NOT_IMPLEMENTEDSivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/ERR_NOT_IMPLEMENTED" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC19ERR_NOT_IMPLEMENTEDSivpZ">ERR_NOT_IMPLEMENTED</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ERR_NOT_IMPLEMENTED</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/--%20Error"></a>
+                <a name="//apple_ref/swift/Section/-- Error" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/--%20Error"></a>
+                  <h3 class="section-name"><p>&ndash; Error</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC5ErrorV"></a>
+                    <a name="//apple_ref/swift/Struct/Error" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC5ErrorV">Error</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>RSA</code> specific error structure.</p>
+
+                        <a href="../Classes/CryptorRSA/Error.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Error</span> <span class="p">:</span> <span class="kt">Swift</span><span class="o">.</span><span class="kt">Error</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Type%20Aliases"></a>
+                <a name="//apple_ref/swift/Section/Type Aliases" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Type%20Aliases"></a>
+                  <h3 class="section-name"><p>Type Aliases</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Alias/NativeKey" class="dashAnchor"></a>
+                    <a class="token" href="#/">NativeKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC9NativeKeya"></a>
+                    <a name="//apple_ref/swift/Alias/NativeKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC9NativeKeya">NativeKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt"><a href="../Classes/CryptorRSA.html#/NativeKey">NativeKey</a></span> <span class="o">=</span> <span class="kt">SecKey</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/--%20Public%20Key%20Creation"></a>
+                <a name="//apple_ref/swift/Section/-- Public Key Creation" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/--%20Public%20Key%20Creation"></a>
+                  <h3 class="section-name"><p>&ndash; Public Key Creation</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC15createPublicKey4withAB0dE0C10Foundation4DataV_tKFZ"></a>
+                    <a name="//apple_ref/swift/Method/createPublicKey(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC15createPublicKey4withAB0dE0C10Foundation4DataV_tKFZ">createPublicKey(with:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a public key with DER data.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">createPublicKey</span><span class="p">(</span><span class="n">with</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/CryptorRSA/PublicKey.html">PublicKey</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Key data</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>New <code><a href="../Classes/CryptorRSA/PublicKey.html">PublicKey</a></code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC15createPublicKey14extractingFromAB0dE0C10Foundation4DataV_tKFZ"></a>
+                    <a name="//apple_ref/swift/Method/createPublicKey(extractingFrom:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC15createPublicKey14extractingFromAB0dE0C10Foundation4DataV_tKFZ">createPublicKey(extractingFrom:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a public key by extracting it from a certificate.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">createPublicKey</span><span class="p">(</span><span class="n">extractingFrom</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/CryptorRSA/PublicKey.html">PublicKey</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>Data</code> representing the certificate.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>New <code><a href="../Classes/CryptorRSA/PublicKey.html">PublicKey</a></code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC15createPublicKey10withBase64AB0dE0CSS_tKFZ"></a>
+                    <a name="//apple_ref/swift/Method/createPublicKey(withBase64:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC15createPublicKey10withBase64AB0dE0CSS_tKFZ">createPublicKey(withBase64:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a key with a base64-encoded string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">createPublicKey</span><span class="p">(</span><span class="n">withBase64</span> <span class="nv">base64String</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/CryptorRSA/PublicKey.html">PublicKey</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>base64String</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Base64-encoded key data</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>New <code><a href="../Classes/CryptorRSA/PublicKey.html">PublicKey</a></code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC15createPublicKey7withPEMAB0dE0CSS_tKFZ"></a>
+                    <a name="//apple_ref/swift/Method/createPublicKey(withPEM:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC15createPublicKey7withPEMAB0dE0CSS_tKFZ">createPublicKey(withPEM:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a key with a PEM string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">createPublicKey</span><span class="p">(</span><span class="n">withPEM</span> <span class="nv">pemString</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/CryptorRSA/PublicKey.html">PublicKey</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pemString</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>PEM-encoded key string</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>New <code><a href="../Classes/CryptorRSA/PublicKey.html">PublicKey</a></code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC15createPublicKey12withPEMNamed6onPathAB0dE0CSS_SStKFZ"></a>
+                    <a name="//apple_ref/swift/Method/createPublicKey(withPEMNamed:onPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC15createPublicKey12withPEMNamed6onPathAB0dE0CSS_SStKFZ">createPublicKey(withPEMNamed:<wbr>onPath:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a key with a PEM file.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">createPublicKey</span><span class="p">(</span><span class="n">withPEMNamed</span> <span class="nv">pemName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">onPath</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/CryptorRSA/PublicKey.html">PublicKey</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pemName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Name of the PEM file</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>path</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Path where the file is located.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>New <code><a href="../Classes/CryptorRSA/PublicKey.html">PublicKey</a></code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC15createPublicKey12withDERNamed6onPathAB0dE0CSS_SStKFZ"></a>
+                    <a name="//apple_ref/swift/Method/createPublicKey(withDERNamed:onPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC15createPublicKey12withDERNamed6onPathAB0dE0CSS_SStKFZ">createPublicKey(withDERNamed:<wbr>onPath:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a key with a DER file.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">createPublicKey</span><span class="p">(</span><span class="n">withDERNamed</span> <span class="nv">derName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">onPath</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/CryptorRSA/PublicKey.html">PublicKey</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>derName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Name of the DER file</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>path</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Path where the file is located.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>New <code><a href="../Classes/CryptorRSA/PublicKey.html">PublicKey</a></code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC15createPublicKey14extractingFrom6onPathAB0dE0CSS_SStKFZ"></a>
+                    <a name="//apple_ref/swift/Method/createPublicKey(extractingFrom:onPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC15createPublicKey14extractingFrom6onPathAB0dE0CSS_SStKFZ">createPublicKey(extractingFrom:<wbr>onPath:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a public key by extracting it from a certificate.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">createPublicKey</span><span class="p">(</span><span class="n">extractingFrom</span> <span class="nv">certName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">onPath</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/CryptorRSA/PublicKey.html">PublicKey</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>certName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Name of the certificate file.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>path</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Path where the file is located.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>New <code><a href="../Classes/CryptorRSA/PublicKey.html">PublicKey</a></code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC15createPublicKey12withPEMNamed2inAB0dE0CSS_So8NSBundleCtKFZ"></a>
+                    <a name="//apple_ref/swift/Method/createPublicKey(withPEMNamed:in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC15createPublicKey12withPEMNamed2inAB0dE0CSS_So8NSBundleCtKFZ">createPublicKey(withPEMNamed:<wbr>in:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a key with a PEM file.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">createPublicKey</span><span class="p">(</span><span class="n">withPEMNamed</span> <span class="nv">pemName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="k">in</span> <span class="nv">bundle</span><span class="p">:</span> <span class="kt">Bundle</span> <span class="o">=</span> <span class="kt">Bundle</span><span class="o">.</span><span class="n">main</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/CryptorRSA/PublicKey.html">PublicKey</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pemName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Name of the PEM file</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bundle</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Bundle in which to look for the PEM file. Defaults to the main bundle.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>New <code><a href="../Classes/CryptorRSA/PublicKey.html">PublicKey</a></code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC15createPublicKey12withDERNamed2inAB0dE0CSS_So8NSBundleCtKFZ"></a>
+                    <a name="//apple_ref/swift/Method/createPublicKey(withDERNamed:in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC15createPublicKey12withDERNamed2inAB0dE0CSS_So8NSBundleCtKFZ">createPublicKey(withDERNamed:<wbr>in:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a key with a DER file.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">createPublicKey</span><span class="p">(</span><span class="n">withDERNamed</span> <span class="nv">derName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="k">in</span> <span class="nv">bundle</span><span class="p">:</span> <span class="kt">Bundle</span> <span class="o">=</span> <span class="kt">Bundle</span><span class="o">.</span><span class="n">main</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/CryptorRSA/PublicKey.html">PublicKey</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>derName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Name of the DER file</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bundle</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Bundle in which to look for the DER file. Defaults to the main bundle.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>New <code><a href="../Classes/CryptorRSA/PublicKey.html">PublicKey</a></code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC15createPublicKey14extractingFrom2inAB0dE0CSS_So8NSBundleCtKFZ"></a>
+                    <a name="//apple_ref/swift/Method/createPublicKey(extractingFrom:in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC15createPublicKey14extractingFrom2inAB0dE0CSS_So8NSBundleCtKFZ">createPublicKey(extractingFrom:<wbr>in:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a public key by extracting it from a certificate.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">createPublicKey</span><span class="p">(</span><span class="n">extractingFrom</span> <span class="nv">certName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="k">in</span> <span class="nv">bundle</span><span class="p">:</span> <span class="kt">Bundle</span> <span class="o">=</span> <span class="kt">Bundle</span><span class="o">.</span><span class="n">main</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/CryptorRSA/PublicKey.html">PublicKey</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>certName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Name of the certificate file.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bundle</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Bundle in which to look for the DER file. Defaults to the main bundle.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>New <code><a href="../Classes/CryptorRSA/PublicKey.html">PublicKey</a></code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/--%20Private%20Key%20Creation"></a>
+                <a name="//apple_ref/swift/Section/-- Private Key Creation" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/--%20Private%20Key%20Creation"></a>
+                  <h3 class="section-name"><p>&ndash; Private Key Creation</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC16createPrivateKey4withAB0dE0C10Foundation4DataV_tKFZ"></a>
+                    <a name="//apple_ref/swift/Method/createPrivateKey(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC16createPrivateKey4withAB0dE0C10Foundation4DataV_tKFZ">createPrivateKey(with:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a private key with data.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">createPrivateKey</span><span class="p">(</span><span class="n">with</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/CryptorRSA/PrivateKey.html">PrivateKey</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Key data</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>New <code><a href="../Classes/CryptorRSA/PrivateKey.html">PrivateKey</a></code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC16createPrivateKey10withBase64AB0dE0CSS_tKFZ"></a>
+                    <a name="//apple_ref/swift/Method/createPrivateKey(withBase64:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC16createPrivateKey10withBase64AB0dE0CSS_tKFZ">createPrivateKey(withBase64:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a key with a base64-encoded string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">createPrivateKey</span><span class="p">(</span><span class="n">withBase64</span> <span class="nv">base64String</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/CryptorRSA/PrivateKey.html">PrivateKey</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>base64String</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Base64-encoded key data</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>New <code><a href="../Classes/CryptorRSA/PrivateKey.html">PrivateKey</a></code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC16createPrivateKey7withPEMAB0dE0CSS_tKFZ"></a>
+                    <a name="//apple_ref/swift/Method/createPrivateKey(withPEM:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC16createPrivateKey7withPEMAB0dE0CSS_tKFZ">createPrivateKey(withPEM:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a key with a PEM string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">createPrivateKey</span><span class="p">(</span><span class="n">withPEM</span> <span class="nv">pemString</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/CryptorRSA/PrivateKey.html">PrivateKey</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pemString</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>PEM-encoded key string</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>New <code><a href="../Classes/CryptorRSA/PrivateKey.html">PrivateKey</a></code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC16createPrivateKey12withPEMNamed6onPathAB0dE0CSS_SStKFZ"></a>
+                    <a name="//apple_ref/swift/Method/createPrivateKey(withPEMNamed:onPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC16createPrivateKey12withPEMNamed6onPathAB0dE0CSS_SStKFZ">createPrivateKey(withPEMNamed:<wbr>onPath:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a key with a PEM file.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">createPrivateKey</span><span class="p">(</span><span class="n">withPEMNamed</span> <span class="nv">pemName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">onPath</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/CryptorRSA/PrivateKey.html">PrivateKey</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pemName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Name of the PEM file</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>path</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Path where the file is located.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>New <code><a href="../Classes/CryptorRSA/PrivateKey.html">PrivateKey</a></code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC16createPrivateKey12withDERNamed6onPathAB0dE0CSS_SStKFZ"></a>
+                    <a name="//apple_ref/swift/Method/createPrivateKey(withDERNamed:onPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC16createPrivateKey12withDERNamed6onPathAB0dE0CSS_SStKFZ">createPrivateKey(withDERNamed:<wbr>onPath:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a key with a DER file.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">createPrivateKey</span><span class="p">(</span><span class="n">withDERNamed</span> <span class="nv">derName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">onPath</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/CryptorRSA/PrivateKey.html">PrivateKey</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>derName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Name of the DER file</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>path</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Path where the file is located.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>New <code><a href="../Classes/CryptorRSA/PrivateKey.html">PrivateKey</a></code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC16createPrivateKey12withPEMNamed2inAB0dE0CSS_So8NSBundleCtKFZ"></a>
+                    <a name="//apple_ref/swift/Method/createPrivateKey(withPEMNamed:in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC16createPrivateKey12withPEMNamed2inAB0dE0CSS_So8NSBundleCtKFZ">createPrivateKey(withPEMNamed:<wbr>in:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a key with a PEM file.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">createPrivateKey</span><span class="p">(</span><span class="n">withPEMNamed</span> <span class="nv">pemName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="k">in</span> <span class="nv">bundle</span><span class="p">:</span> <span class="kt">Bundle</span> <span class="o">=</span> <span class="kt">Bundle</span><span class="o">.</span><span class="n">main</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/CryptorRSA/PrivateKey.html">PrivateKey</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pemName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Name of the PEM file</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bundle</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Bundle in which to look for the PEM file. Defaults to the main bundle.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>New <code><a href="../Classes/CryptorRSA/PrivateKey.html">PrivateKey</a></code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC16createPrivateKey12withDERNamed2inAB0dE0CSS_So8NSBundleCtKFZ"></a>
+                    <a name="//apple_ref/swift/Method/createPrivateKey(withDERNamed:in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC16createPrivateKey12withDERNamed2inAB0dE0CSS_So8NSBundleCtKFZ">createPrivateKey(withDERNamed:<wbr>in:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a key with a DER file.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">createPrivateKey</span><span class="p">(</span><span class="n">withDERNamed</span> <span class="nv">derName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="k">in</span> <span class="nv">bundle</span><span class="p">:</span> <span class="kt">Bundle</span> <span class="o">=</span> <span class="kt">Bundle</span><span class="o">.</span><span class="n">main</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/CryptorRSA/PrivateKey.html">PrivateKey</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>derName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Name of the DER file</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bundle</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Bundle in which to look for the DER file. Defaults to the main bundle.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>New <code><a href="../Classes/CryptorRSA/PrivateKey.html">PrivateKey</a></code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC11makeKeyPairyAB07PrivateD0C_AB06PublicD0CtAB6RSAKeyC0D4SizeVKFZ"></a>
+                    <a name="//apple_ref/swift/Method/makeKeyPair(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC11makeKeyPairyAB07PrivateD0C_AB06PublicD0CtAB6RSAKeyC0D4SizeVKFZ">makeKeyPair(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a new RSA public/private key pair.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">makeKeyPair</span><span class="p">(</span><span class="n">_</span> <span class="nv">keySize</span><span class="p">:</span> <span class="kt"><a href="../Classes/CryptorRSA/RSAKey.html">RSAKey</a></span><span class="o">.</span><span class="kt">KeySize</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt"><a href="../Classes/CryptorRSA/PrivateKey.html">PrivateKey</a></span><span class="p">,</span> <span class="kt"><a href="../Classes/CryptorRSA/PublicKey.html">PublicKey</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keySize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The size of the generated RSA keys in bits.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A tuple containing the (<code><a href="../Classes/CryptorRSA/PrivateKey.html">PrivateKey</a></code>, <code><a href="../Classes/CryptorRSA/PublicKey.html">PublicKey</a></code>) instances.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC6RSAKeyC"></a>
+                    <a name="//apple_ref/swift/Class/RSAKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC6RSAKeyC">RSAKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>RSA Key Creation and Handling</p>
+
+                        <a href="../Classes/CryptorRSA/RSAKey.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">RSAKey</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC9PublicKeyC"></a>
+                    <a name="//apple_ref/swift/Class/PublicKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC9PublicKeyC">PublicKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Public Key - Represents public key data.</p>
+
+                        <a href="../Classes/CryptorRSA/PublicKey.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">PublicKey</span> <span class="p">:</span> <span class="kt"><a href="../Classes/CryptorRSA/RSAKey.html">RSAKey</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC10PrivateKeyC"></a>
+                    <a name="//apple_ref/swift/Class/PrivateKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC10PrivateKeyC">PrivateKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Private Key - Represents private key data.</p>
+
+                        <a href="../Classes/CryptorRSA/PrivateKey.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">PrivateKey</span> <span class="p">:</span> <span class="kt"><a href="../Classes/CryptorRSA/RSAKey.html">RSAKey</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/--%20RSAUtilities"></a>
+                <a name="//apple_ref/swift/Section/-- RSAUtilities" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/--%20RSAUtilities"></a>
+                  <h3 class="section-name"><p>&ndash; RSAUtilities</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Method/createKey(from:type:)" class="dashAnchor"></a>
+                    <a class="token" href="#/">createKey(from:<wbr>type:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a key from key data.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Method/getLastError(source:)" class="dashAnchor"></a>
+                    <a class="token" href="#/">getLastError(source:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieve the OpenSSL error and text.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC9createKey4from4typeSo03SecD3Refa10Foundation4DataV_AB6RSAKeyC0D4TypeOtKFZ"></a>
+                    <a name="//apple_ref/swift/Method/createKey(from:type:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC9createKey4from4typeSo03SecD3Refa10Foundation4DataV_AB6RSAKeyC0D4TypeOtKFZ">createKey(from:<wbr>type:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a key from key data.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">createKey</span><span class="p">(</span><span class="n">from</span> <span class="nv">keyData</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">CryptorRSA</span><span class="o">.</span><span class="kt"><a href="../Classes/CryptorRSA/RSAKey.html">RSAKey</a></span><span class="o">.</span><span class="kt">KeyType</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/CryptorRSA.html#/NativeKey">NativeKey</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyData</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>Data</code> representation of the key.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Type of key data.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>SecKey</code> representation of the key.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC15convertDerToPem4from4typeSS10Foundation4DataV_AB6RSAKeyC7KeyTypeOtFZ"></a>
+                    <a name="//apple_ref/swift/Method/convertDerToPem(from:type:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC15convertDerToPem4from4typeSS10Foundation4DataV_AB6RSAKeyC7KeyTypeOtFZ">convertDerToPem(from:<wbr>type:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Convert DER data to PEM data.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">convertDerToPem</span><span class="p">(</span><span class="n">from</span> <span class="nv">derData</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">CryptorRSA</span><span class="o">.</span><span class="kt"><a href="../Classes/CryptorRSA/RSAKey.html">RSAKey</a></span><span class="o">.</span><span class="kt">KeyType</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>derData</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>Data</code> in DER format.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Type of key data.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>PEM <code>Data</code> representation.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC12base64String3forS2S_tKFZ"></a>
+                    <a name="//apple_ref/swift/Method/base64String(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC12base64String3forS2S_tKFZ">base64String(for:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get the Base64 representation of a PEM encoded string after stripping off the PEM markers.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">base64String</span><span class="p">(</span><span class="k">for</span> <span class="nv">pemString</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pemString</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>String</code> containing PEM formatted data.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Base64 encoded <code>String</code> containing the data.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC26stripX509CertificateHeader3for10Foundation4DataVAG_tKFZ"></a>
+                    <a name="//apple_ref/swift/Method/stripX509CertificateHeader(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC26stripX509CertificateHeader3for10Foundation4DataVAG_tKFZ">stripX509CertificateHeader(for:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This function strips the x509 from a provided ASN.1 DER public key. If the key doesn&rsquo;t contain a header,
+the DER data is returned as is.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">stripX509CertificateHeader</span><span class="p">(</span><span class="k">for</span> <span class="nv">keyData</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Data</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyData</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>Data</code> containing the public key with or without the x509 header.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>Data</code> containing the public with header (if present) removed.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CryptorRSAAAC24addX509CertificateHeader3for10Foundation4DataVAG_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/addX509CertificateHeader(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CryptorRSAAAC24addX509CertificateHeader3for10Foundation4DataVAG_tFZ">addX509CertificateHeader(for:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Add an X509 certificate header to key data.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">addX509CertificateHeader</span><span class="p">(</span><span class="k">for</span> <span class="nv">keyData</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Data</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyData</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Data to add the header to.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The modified key data.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2020 <a class="link" href="https://github.com/Kitura-Next/BlueRSA" target="_blank" rel="external">IBM</a>. All rights reserved. (Last updated: 2020-12-01)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
