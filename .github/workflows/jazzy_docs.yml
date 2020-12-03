@@ -1,12 +1,15 @@
 name: Jazzy_Docs
 
 on:
-  push:
+  release:
+    types: [published] # rebuild and deploy docs for every new release published.
+  pull_request:
     branches: [ master ]
+    types: [ labeled ] # To update docs without a release - submit a PR and add the "documentation" label.
 
 jobs:
   build:
-
+    if: ${{ github.event.label.name == 'documentation' }} | ${{ github.event.release.tag_name == '*' }}
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
