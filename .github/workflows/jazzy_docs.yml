@@ -27,5 +27,5 @@ jobs:
         run:  |
           git config --global user.name "${USER_NAME}"
           git config --global user.email "${USER_EMAIL}"
-          jazzy --theme fullwidth
+          jazzy --theme fullwidth --module CryptorRSA
           npm run deploy
