@@ -12,7 +12,7 @@
 # BlueRSA
 
 Swift cross-platform RSA wrapper library for RSA encryption and signing. Works on supported Apple platforms (using Security framework).  Linux (using OpenSSL) is working but is still somewhat of a work in progress.  
-Test jazzy docs build 1. - don't generate docs.
+Test jazzy docs build 1. -- don't generate docs.
 
 ## Contents
 
