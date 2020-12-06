@@ -2,38 +2,13 @@ name: Jazzy_Docs
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master ] # To update docs without a release - add 'ci generate docs' to the merge commit message.
   release:
     types: [published] # rebuild and deploy docs for every new release published.
-  pull_request:
-    branches: [ master ]
-    types: [ labeled ] # To update docs without a release - submit a PR and add the "documentation" label.
-    
+  
 jobs:
   build-on-push:
     if: "contains(github.event.head_commit.message, 'ci generate docs')"
-    runs-on: macos-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: install gh-pages
-        run:  |
-          npm install -g gh-pages
-      - name: install jazzy
-        run:  |
-          gem install jazzy
-      - name: create docs
-        env:
-          KITURA_NEXT: ${{ secrets.KITURA_NEXT }}
-          USER_NAME: ${{ secrets.USER_NAME }}
-          USER_EMAIL: ${{ secrets.USER_EMAIL }}
-        run:  |
-          git config --global user.name "${USER_NAME}"
-          git config --global user.email "${USER_EMAIL}"
-          jazzy --theme fullwidth --module CryptorRSA
-          npm run deploy
-          
-  build-on-pull_request:
-    if: ${{ github.event.label.name == 'documentation' }}
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
