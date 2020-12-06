@@ -2,6 +2,7 @@ name: Jazzy_Docs
 
 on:
   push:
+    branches: [ master ]
   release:
     types: [published] # rebuild and deploy docs for every new release published.
   pull_request:
