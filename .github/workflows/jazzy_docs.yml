@@ -6,10 +6,12 @@ on:
   pull_request:
     branches: [ master ]
     types: [ labeled ] # To update docs without a release - submit a PR and add the "documentation" label.
-
+  push:
+    branches: [ master ]
+    
 jobs:
   build:
-    if: ${{ github.event.label.name == 'documentation' }} | ${{ github.event.release.tag_name == '*' }}
+    if: ${{ github.event.label.name == 'documentation' }} | ${{ github.event.release.tag_name == '*' }} | ${{ contains(github.event.head_commit.message, 'CI generate docs') }}
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
