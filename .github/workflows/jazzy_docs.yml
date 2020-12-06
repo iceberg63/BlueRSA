@@ -21,10 +21,6 @@ jobs:
         run:  |
           gem install jazzy
       - name: create docs
-        env:
-          KITURA_NEXT: ${{ secrets.KITURA_NEXT }}
-          USER_NAME: ${{ secrets.USER_NAME }}
-          USER_EMAIL: ${{ secrets.USER_EMAIL }}
         run:  |
           git config --global user.name "${USER_NAME}"
           git config --global user.email "${USER_EMAIL}"
