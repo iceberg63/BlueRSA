@@ -10,7 +10,7 @@ on:
     
 jobs:
   build:
-    if: ${{ contains(github.event.head_commit.message, 'CI generate docs') }} | ${{ github.event.label.name == 'documentation' }} | ${{ github.event.release.tag_name == '*' }}
+    if: ${{ github.event.head_commit.message == 'CI generate docs') }} | ${{ github.event.label.name == 'documentation' }} | ${{ github.event.release.tag_name == '*' }}
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
