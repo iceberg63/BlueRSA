@@ -32,7 +32,7 @@ jobs:
           npm run deploy
           
   build-on-pull_request:
-    if: ${{ github.event.label.name == 'documentation' }} | ${{ github.event.release.tag_name == '*' }}
+    if: ${{ github.event.label.name == 'documentation' }}
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
